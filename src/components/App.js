@@ -1,11 +1,25 @@
-import React from 'react'
+import React from "react";
 
 const App = () => {
-  return (
-    <div id="main">
-               {/* Do not remove the main div */}
-    </div>
-  )
-}
 
-export default App
+  const relatives = [
+    'sharma Uncle',
+    ' Jadav Aunt ',
+    'Cousin Naina',
+    'Grandpa Jagtap',
+    'Grandma Jyoti',
+  ];
+  return (
+
+    <div id="main">
+      <h2>Diwali Shopping List</h2>
+      <ol key="relativeList">
+        {relatives.map((relative, index) => (
+          <li key={`${index + 1}`}>{relative}</li>
+        ))}
+      </ol>
+    </div>
+  );
+};
+
+export default App;
