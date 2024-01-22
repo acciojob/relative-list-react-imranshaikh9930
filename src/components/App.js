@@ -15,7 +15,7 @@ const App = () => {
       <h2>Diwali Shopping List</h2>
       <ol key="relativeList">
         {relatives.map((relative, index) => (
-          <li key={`${index + 1}`}>{relative}</li>
+          <li key={`relativeListItem${index + 1}`}>{relative}</li>
         ))}
       </ol>
     </div>
